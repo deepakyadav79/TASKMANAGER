@@ -7,6 +7,14 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api/:splat"
+  status = 200
+  force = true
 
 [build.environment]
-  REACT_APP_API_URL = "https://your-backend-url.herokuapp.com/api"
+  REACT_APP_API_URL = "https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api"
+  NODE_VERSION = "18"
