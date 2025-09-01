@@ -17,5 +17,8 @@ services:
     name: task-manager-frontend
     env: static
     plan: free
-    buildCommand: cd frontend && npm install && REACT_APP_API_URL=https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api npm run build
+    buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api
