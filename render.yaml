@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: task-manager-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        value: your_super_secret_jwt_key_change_this_in_production
+      - key: MONGODB_URI
+        value: mongodb+srv://assignment:123@cluster0.bu6vrfk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
