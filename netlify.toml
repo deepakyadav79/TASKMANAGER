@@ -11,10 +11,10 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api/:splat"
+  to = "https://taskmanager2-l4in.onrender.com/api/:splat"
   status = 200
   force = true
 
 [build.environment]
-  REACT_APP_API_URL = "https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api"
+  REACT_APP_API_URL = "https://taskmanager2-l4in.onrender.com/api"
   NODE_VERSION = "18"

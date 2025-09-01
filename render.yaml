@@ -21,4 +21,4 @@ services:
     staticPublishPath: build
     envVars:
       - key: REACT_APP_API_URL
-        value: https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api
+        value: https://taskmanager2-l4in.onrender.com/api
