@@ -12,3 +12,10 @@ services:
         value: your_super_secret_jwt_key_change_this_in_production
       - key: MONGODB_URI
         value: mongodb+srv://assignment:123@cluster0.bu6vrfk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+  - type: web
+    name: task-manager-frontend
+    env: static
+    plan: free
+    buildCommand: cd frontend && npm install && REACT_APP_API_URL=https://task-manager-backend-exs-d2qp97gdl3ps73b7mh7g.onrender.com/api npm run build
+    staticPublishPath: frontend/build
